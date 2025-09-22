@@ -1,0 +1,47 @@
+#welcome {
+    background: blue;
+    color: white;
+    font-size: 40px;
+    font-family: Helvetica;
+}
+
+header{
+    background-color: pink;
+    padding: 40px;
+    margin: 20px;
+    border: 10px;
+    border-color: black;
+    border-style: dotted;
+}
+
+#card{
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#twocol{
+    background-color: brown;
+}
+
+#sidebar{
+    display: inline-block;
+    background-color: yellow;
+    width: 100px;
+    margin-right: 0px;
+}
+
+#content{
+    display: inline-block;
+    background-color: green;
+    width: 300px;
+    margin-left: 0px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-weight: bold;
+}

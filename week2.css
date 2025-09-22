@@ -1,0 +1,38 @@
+#p1{
+    background: lightblue; 
+    display: inline;
+}
+
+#p2{
+    position: relative;
+    top: 60px;
+    left: 50px;
+}
+#box{
+    position:relative;
+    background: pink; 
+    height: 500px;
+    width:500px;
+    left: 100px;
+    top: 50px;
+
+}
+#p3{
+    background: lightblue; 
+    position: sticky;
+    height: 12vh;
+    width:12;
+    top:30px;
+    font-size: 50px;
+
+}
+
+#a1{
+    display: block;
+    position: sticky;
+    font-size: 50%;
+}
+
+#a2{
+    display: inline-block;
+}

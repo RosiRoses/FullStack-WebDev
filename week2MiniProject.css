@@ -1,0 +1,75 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+header{
+    background-color: lightpink;
+    margin: 0px;
+    padding: 20px;
+
+}
+
+#pfp{
+    border-radius: 50%;
+}
+
+#name{
+    margin: 0px;
+    font-size: 50px;
+    display: inline-block;
+    color: white;
+}
+
+#position{
+    font-size: 30px;
+    color: white;
+}
+
+nav a{
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+#introSec{
+    background-color: salmon;
+    padding: 13px;
+    margin: 0px;
+}
+
+#introDesc{
+    font-size: 20px;
+}
+
+#skillsSec{
+    background-color: palevioletred;
+    padding: 15px;
+}
+
+table{
+    margin: 10px;
+    border: 3px;
+    border-style:dashed;
+    font-size: 20px;
+}
+
+.hthree{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+}
+
+#contactSec{
+    background-color: bisque;
+    padding: 15px;;
+}
+
+label{
+    font-size: 20px;
+}
+button{
+    background-color: lightcoral;
+    font-size: 15px;
+    border-radius: 15%;
+    margin-left: 30px;
+}
