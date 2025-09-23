@@ -1,0 +1,158 @@
+#tryflex{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mybaby{
+    width: 20vh;
+    height: auto;
+    border-radius: 50%;
+}
+
+#name{
+    font-size: 30px;
+}
+
+#sunghoon{
+    background-color: red;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+#heeman{
+    background-color: purple;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+#hannie{
+    background-color: darkblue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 600px;
+}
+
+#trygrid{
+    /* display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows: auto auto auto;
+ 
+    grid-template-areas: 
+        "header header"
+        "main side"
+        "footer footer"; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    #trygrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+ 
+#header{
+    background-color: pink;
+    /* grid-area:header; */
+}
+
+#mainbod{
+    background-color: lightgreen;
+    /* grid-area: main; */
+}
+
+#sidebod{
+    background-color: lightskyblue;
+    /* grid-area: side; */
+}
+
+#footer{
+    background-color: rgb(255, 255, 137);
+    /* grid-area: footer; */
+}
+
+/* small phones, large phones, small tablets base design
+body{
+    font-size: 16px;
+}
+/* tablets(portrait) */
+/* @media(min-width:768px){
+    body{
+        font-size: 18px;
+    }
+} */
+/* tablet(landscape)/small laptops */
+/* @media(min-width: 1024px){
+    body{
+        font-size: 20px;
+    }
+} */
+/* desktops */
+/* @media(min-width:1200px){
+    body{
+        font-size: 22px;
+    }
+}  */
+
+nav {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+@media(min-width:768px){
+    nav{
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+:root{
+    --bg: #da2689;
+    --text: hsl(78, 100%, 50%);
+    --accent: #ff6b6b;
+}
+
+:root[data-theme="dark"] {
+    --bg: #4d0f0f;
+    --text: #f7f7f7;
+    --accent: #1d2c0a;
+}
+
+#switch{
+    background: var(--bg);
+    color: var(--text);
+}
+
+#toggle{
+    background-color: var(--accent);
+}
+
+#toggle:hover{
+    background-color: yellow;
+}
+
+a:focus{
+    border-style: solid;
+    border-color: #04e723;
+    border-width: 2px;    
+    outline: none;        
+}
+
+tr:nth-child(2n){
+    background: salmon;
+    background-color: salmon;
+}
+
+#checky:checked + label{
+    text-decoration: line-through;
+}
