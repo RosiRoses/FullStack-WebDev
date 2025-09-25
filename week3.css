@@ -61,6 +61,7 @@
  
 #header{
     background-color: pink;
+    animation: slidein 0.8s ease-in-out;
     /* grid-area:header; */
 }
 
@@ -129,23 +130,39 @@ nav {
 }
 
 #switch{
-    background: var(--bg);
+    /* background: var(--bg); */
+     background: linear-gradient(135deg, yellow, rgb(255, 94, 0));
     color: var(--text);
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
 }
 
 #toggle{
-    background-color: var(--accent);
+   
+    box-shadow: 10px 10px 5px rgba(74, 24, 212, 0.3);
+    transition: background 0.5s ease;
+    animation: pulse 1s infinite;
 }
 
 #toggle:hover{
-    background-color: yellow;
+    background: yellow;
+    animation: none;
+    /* transform: scale(2.2); */
+    
 }
 
-a:focus{
+a{
+    text-shadow: 2px 1px 9px rgb(223, 18, 52);
+}
+
+a:hover{
     border-style: solid;
     border-color: #04e723;
     border-width: 2px;    
-    outline: none;        
+    outline: none; 
+    transform: scale(1.5);       
 }
 
 tr:nth-child(2n){
@@ -156,3 +173,83 @@ tr:nth-child(2n){
 #checky:checked + label{
     text-decoration: line-through;
 }
+
+h1::before{
+    content: "“";
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: black;
+    margin-right: 8px;
+}
+
+h1::after{
+    content: "”";
+    color: gray;
+    font-size: 1em;
+}
+
+#toggle::after{
+    content: " NEW";
+    color: white;
+    background-color: red;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+h1{
+      text-shadow: 1px 1px 2px gray;
+    animation: fade 2s ease-in-out 2 backwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loader{
+    width:50px;
+    height: 50px;
+    border: 5px solid gray;
+    border-top: 5px solid salmon;
+    border-radius: 50%;
+    animation: spin 1s linear 3 backwards ;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes slidein{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
