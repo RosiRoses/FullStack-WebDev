@@ -4,8 +4,14 @@ const y= '5';
 const x=null;
 const z=null;
 
-
-
+randInt(1,6);
+function randInt(min,max){
+    var a = max-min+1; //ensures full range of outcomes
+    var b = Math.random()*a; //gives decimal b/w 0 and 5.9
+    var c = Math.floor(b)+min; //now numbers are 0-5
+ // adding +min changes the range to 1-6
+    console.log(c);
+}
 
 
 shorten(s, 3);
