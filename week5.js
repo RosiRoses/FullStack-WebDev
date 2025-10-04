@@ -217,10 +217,76 @@ function rollDice(){
 
 rollDice();
 
-const task = document.getElementById(task);
-if(task===!0 || task===!null){
-    console.log(task);
+// const task = document.getElementById(task);
+// if(task===!0 || task===!null){
+//     console.log(task);
+// }
+
+const id1 = Symbol("id");
+const id2 = Symbol("id");
+
+console.log(id1 === id2);
+
+const computer = {
+    name: "koko",
 }
+
+// 
+
+const msg = `hi 
+hello`;
+console.log(msg);
+
+console.log(parseFloat(true));
+console.log(Number(true));
+console.log(`Today is <${new Date().getDay()}>`);
+
+const sliced = arr.splice(1,2,'pomegranate','lollipop'
+);
+console.log(sliced);
+console.log(arr);
+
+// arr.forEach(arro => console.log(arro.toUpperCase()));
+// const upper = arr.map(arro => arro.toUpperCase());
+// console.log(upper);
+
+const withi = arr.filter(arro => arro.includes("i")); 
+console.log(withi);
+
+const g= ["apple","banana","cherry"];
+const h=g.splice(1,1, 'mango')
+console.log(g);
+const j= [1,2,3,4]
+for(const fruit of g){
+    console.log(`i like ${fruit}`);
+}
+
+const doublyy=j.map(numbersi => numbersi.toString());
+console.log(doublyy);
+
+const divisible = function (a,b) {
+    return a-b;
+};
+console.log(divisible(9,8));
+const squarey = (a,b) => a*b;
+console.log(squarey(2,3));
+const member = "Sunghoon";
+function greet(message = "Jeonghan"){
+    console.log(`I love ${message}`);
+}
+greet(member);
+
+function factorialcustom(...fact){
+    return fact.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(factorialcustom(1,2,3,4,5));
+
+const task = document.getElementById("task");
+const bttn = document.getElementById("push");
+const todolist = document.getElementById("todolist");
+
+let tasklist = [];
+
 
 
 // console.log("hello");
