@@ -55,10 +55,16 @@ h2{
     width: 40px;
     border: none;
     background-color: #f19c79;
-    
 }
 
+button:hover{
+    cursor: pointer;
+}
 
+#add:hover{
+    background-color: #f08060;
+    cursor: pointer;
+}
 
 #btnIcon{
     padding: 0;
@@ -69,4 +75,9 @@ h2{
 
 ul{
     font-size: 1.25em;
+}
+
+.done{
+    text-decoration: line-through;
+    color: gray;
 }

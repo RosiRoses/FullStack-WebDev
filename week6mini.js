@@ -2,6 +2,13 @@ const tasks = document.getElementById('tasks');
 const textbox = document.getElementById('textbox');
 const add = document.getElementById('add');
 
+textbox.addEventListener('keypress', (e) =>{
+    if(e.key === 'Enter'){
+        add.click();
+    }
+});
+
+
 add.addEventListener('click', () =>{
     if(textbox.value === ""){
         return;
@@ -23,12 +30,15 @@ add.addEventListener('click', () =>{
     delBtn.style.backgroundColor = '#f6f4d2';
     delBtn.style.borderRadius = '15px';
     delBtn.style.marginLeft = 'auto';
-    delBtn.style.magrinRight = '0'; 
+    delBtn.style.marginRight = '0'; 
     delBtn.appendChild(dustBin);
     const li = document.createElement('li');
     li.innerText = textbox.value.trim();
     li.style.marginRight = '15px';
 
+    li.addEventListener('click', () => {
+        li.classList.toggle('done');
+    });
 
     span.appendChild(li);
     span.appendChild(delBtn);
