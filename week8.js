@@ -1,5 +1,95 @@
-const average = (...vals) => vals.reduce((s,p) => s+p,0)/vals.length;
-console.log(average(1,2,3,4,5));
+// const names = ['ali', 'zara', 'zain'];
+// names.forEach((name, i) => console.log(i+1, name));
+
+// const letters = ['a', 'b', 'c'];
+// letters.forEach((letter, i) => console.log(i+1, letter));
+
+
+// const textbox = document.getElementById('textbox');
+// const btn = document.getElementById('btn');
+// const pagelist = document.getElementById('list');
+// const list =[];
+
+// btn.addEventListener('click', () => {
+//     const textvalue = textbox.value.trim();
+//     if (textvalue === "") return;
+
+//     list.push(textvalue);
+
+//     textbox.value = "";
+//     renderList();
+// })
+
+// function renderList(){
+//     pagelist.innerHTML = "";
+
+//     list.forEach(item => {
+//         const li = document.createElement('li');
+//         li.textContent = item;
+//         pagelist.append(li);
+//     });
+// }
+
+// const nums = [1,2,3];
+// const doubled = nums.map(n => n*2);
+// doubled.forEach(item => console.log(item));
+
+// const colors = ['red', 'yellow', 'blue'];
+// const upper = colors.map(item => item.toUpperCase());
+// upper.forEach(item => console.log(item));
+
+// const arr = [{price:10}, {price:20}];
+// const newarr = arr.map(item => item.price);
+// newarr.forEach(item => console.log(item));
+
+const nums = [1, 2, 3, 4, 5, 6];
+const evens = nums.filter(item => item % 2 === 0);
+evens.forEach(item => console.log(item));
+
+// const obj = {
+//     greet(){
+//         return 'hello';
+//     }
+// };
+// console.log(obj.greet());
+
+
+// const name = 'ali';
+// const age = 22; 
+// const person = {
+//     name,
+//     age
+// };
+
+// console.log(person);
+
+
+// const o = {
+//     val: 5,
+//     f: () => console.log(this),
+//     g() {console.log(this)}
+// };
+// o.f();
+// o.g();
+
+
+
+// const factorial = n =>{
+//     let j = 1;
+//     if (n<=1) return 1;
+//     else{
+//         for(let i=1; i<=n; i++){
+//             j = j*i;
+//         }
+//     }
+//     return j;
+// };
+// console.log(factorial(5));
+
+
+// const average = (...vals) => vals.reduce((s,p) => s+p,0)/vals.length;
+// console.log(average(1,2,3,4,5));
+
 
 // function greet(name = "user"){
 //     return `Hello ${name}`;
@@ -7,9 +97,9 @@ console.log(average(1,2,3,4,5));
 // console.log(greet(null));
 
 // function product(...nums){
-//     return nums.reduce((p,n) => p*n,0);
+//     return nums.reduce((p,n) => p*n,1);
 // }
-// console.log(product(1,2));
+// console.log(product(1,2,3,4,5));
 
 
 // const arr1 = [1,2];
@@ -89,11 +179,7 @@ console.log(average(1,2,3,4,5));
 // console.log(head);
 
 // const heading = document.getElementById('heading');
-// const message = `can
-// i
-// enter
-// multiple
-// lines`;
+// const message = `can<br>i<br>enter<br>multiple<br>lines`;
 // heading.innerHTML = message;
 
 
